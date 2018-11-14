@@ -58,4 +58,8 @@ digitalWrite(8,LOW);
 digitalWrite(9,LOW);
 digitalWrite(10,LOW);
 delay(100);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

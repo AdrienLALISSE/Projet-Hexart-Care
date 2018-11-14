@@ -17,7 +17,7 @@ void loop() { // put your main code here, to run repeatedly:
 
 
 int x;
-x=1000;
+x=100;
 
 digitalWrite(1,HIGH), digitalWrite(2,HIGH), digitalWrite(3,HIGH), digitalWrite(4,HIGH), digitalWrite(5,HIGH), digitalWrite(6,HIGH), digitalWrite(7,HIGH), digitalWrite(8,HIGH), digitalWrite(9,HIGH), digitalWrite(10,HIGH);
 delay(50);

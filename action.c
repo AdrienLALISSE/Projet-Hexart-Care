@@ -19,7 +19,7 @@ struct Personne pers_cardiaque;
 
 int calcul_moyennePoul() //Calcule la valeur moyenne du poul
 {
-    printf("--- Calcul Moyen du Poul ---\n\n");
+    printf("\n--- Calcul Moyen du Poul ---\n\n");
 
     resultat = tabValeur[nbValeur / 2];
     return resultat;
@@ -27,7 +27,7 @@ int calcul_moyennePoul() //Calcule la valeur moyenne du poul
 
 int calcul_moyenneTemps() // Calcule la valeur moyenne du poul sur un laps de temps donné
 {
-    printf("--- Calcul Moyen du Poul sur un laps de temps ---\n\n");
+    printf("\n--- Calcul Moyen du Poul sur un laps de temps ---\n\n");
 
     printf("Entrez votre laps de temps minimum : ");
     scanf("%d", &tmp1);
@@ -66,9 +66,9 @@ int afficher_NbValeur() //Affiche le nombre de valeur calculées
 void read_file()
 {
     FILE* fichier = NULL;
-    fichier = fopen("Battement.csv", "r+");
+    fichier = fopen("Battement.csv", "w+");
 
     fscanf("%d", &pers_cardiaque.freqCardiaque);
-    printf("%d", pers_cardiaque.freqCardiaque);
+    fprintf("%d", pers_cardiaque.freqCardiaque, fichier);
 }
 

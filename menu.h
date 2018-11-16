@@ -4,5 +4,5 @@
 
 //Déclaration des fonction d'affichage des menus
 
-void afficherMenu(void);
 void choisirMenu(void);
+

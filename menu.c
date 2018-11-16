@@ -8,23 +8,17 @@ int choixMenu;
 
 //Définition des fonction d'affichage des menus
 
-int afficherMenu()
+void choisirMenu()
 {
     printf("\t--- Menu ---\n");
-    printf("1 - Frequence cradiaque moyenne \n");
+    printf("1 - Frequence cardiaque moyenne \n");
     printf("2 - Frequence cardiaque moyenne sur un laps de temps \n");
     printf("3 - Frequence cardiaque maximum \n");
     printf("4 - Frequence cardiaque minimum \n");
     printf("6 - Affichage des valeurs par ordre croissant \n");
     printf("7 - Affichage des valeurs par ordre decroissant \n");
     printf("8 - Affichage nombre de valeurs \n");
-
-    return choixMenu;
-}
-
-void choisirMenu()
-{
-    choixMenu = afficherMenu();
+    scanf("%d", &choixMenu);
 
     switch (choixMenu)
     {
